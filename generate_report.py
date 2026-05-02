@@ -235,8 +235,8 @@ def generate_report():
     add_paragraph(doc, "Live Deployment (Vercel):", bold=True)
     add_paragraph(doc, "https://nutri-track-zeta-five.vercel.app")
     add_paragraph(doc, "Project Presentation Videos:", bold=True)
-    add_paragraph(doc, "1. Project Overview Video: [REPLACE_WITH_YOUR_VIDEO_LINK]")
-    add_paragraph(doc, "2. Code Explanation Video: [REPLACE_WITH_YOUR_VIDEO_LINK]")
+    add_paragraph(doc, "1. Project Overview Video: https://drive.google.com/file/d/1Be60C03s2S5sAxUPHTqEMlDAmZv4I4In/view?usp=drive_link")
+    add_paragraph(doc, "2. Code Explanation Video: https://drive.google.com/file/d/1t1672rSPheSI7PkiaNm_XQWOV_98RAm-/view?usp=drive_link")
 
     doc.save("NutriTrack_Final_Detailed_Report_v2.docx")
     print("NutriTrack_Final_Detailed_Report_v2.docx generated successfully.")

@@ -30,8 +30,8 @@ You can access the live application here:
 
 As per the project requirements, here are the video links:
 
-1. **Project Overview Video**: [Click here to watch the walkthrough](REPLACE_WITH_YOUR_VIDEO_LINK)  
-2. **Code Explanation Video**: [Click here to watch the technical deep-dive](REPLACE_WITH_YOUR_VIDEO_LINK)
+1. **Project Overview Video**: [Watch the Project Walkthrough](https://drive.google.com/file/d/1Be60C03s2S5sAxUPHTqEMlDAmZv4I4In/view?usp=drive_link)  
+2. **Code Explanation Video**: [Watch the Technical Explanation](https://drive.google.com/file/d/1t1672rSPheSI7PkiaNm_XQWOV_98RAm-/view?usp=drive_link)
 
 *(Note: Please upload your videos to GitHub or YouTube and replace the links above)*
 
