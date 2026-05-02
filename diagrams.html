@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+    <script>mermaid.initialize({startOnLoad:true});</script>
+</head>
+<body>
+    <div class="mermaid">
+        graph TD
+        A[User Browser] -->|HTTP/REST| B[Express.js Server]
+        B -->|Mongoose| C[MongoDB]
+        B -->|API Request| D[Spoonacular AI]
+        B -->|Image Upload| E[Cloudinary]
+        B -->|PDF Stream| F[PDFKit]
+        A -->|React Context| G[Auth State]
+    </div>
+    <div class="mermaid">
+        erDiagram
+        USER ||--o{ FOODLOG : has
+        USER {
+            string id
+            string name
+            string email
+            string password
+            int age
+            float weight
+            float height
+            string goal
+        }
+        FOODLOG {
+            string id
+            string userId
+            string foodName
+            int calories
+            float protein
+            float carbs
+            float fats
+            date createdAt
+        }
+    </div>
+    <div class="mermaid">
+        sequenceDiagram
+        User->>Frontend: Upload Food Image
+        Frontend->>Backend: POST /api/upload
+        Backend->>Cloudinary: Upload Image
+        Cloudinary-->>Backend: Image URL
+        Backend->>Spoonacular: Analyze Image(URL)
+        Spoonacular-->>Backend: Nutritional Data
+        Backend->>MongoDB: Save Food Log
+        Backend-->>Frontend: 200 OK (Log Details)
+        Frontend->>User: Update Dashboard
+    </div>
+</body>
+</html>
