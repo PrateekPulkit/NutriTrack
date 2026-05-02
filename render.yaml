@@ -3,7 +3,7 @@ services:
     name: nutritrack-api
     env: node
     plan: free
-    buildCommand: npm install
+    buildCommand: npm install && npm run build
     startCommand: npm start
     healthCheckPath: /api/health
     envVars:
@@ -12,7 +12,7 @@ services:
       - key: PORT
         value: 10000
       - key: SERVE_CLIENT
-        value: false
+        value: true
       - key: CLIENT_URL
         sync: false
       - key: CORS_ORIGIN
