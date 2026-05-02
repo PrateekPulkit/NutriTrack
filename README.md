@@ -6,18 +6,36 @@
 
 ## 📋 Table of Contents
 
+- [🚀 Live Demo](#-live-demo)
+- [🎥 Video Presentations](#-video-presentations)
 - [Overview](#-overview)
 - [Features](#-features)
 - [Tech Stack](#-tech-stack)
 - [Project Structure](#-project-structure)
 - [Getting Started](#-getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Installation](#installation)
-  - [Environment Variables](#environment-variables)
-  - [Running the App](#running-the-app)
 - [API Endpoints](#-api-endpoints)
 - [Screenshots](#-screenshots)
 - [License](#-license)
+
+---
+
+## 🚀 Live Demo
+
+You can access the live application here:  
+**[NutriTrack Live on Vercel](https://nutri-track-zeta-five.vercel.app)**
+
+---
+
+## 🎥 Video Presentations
+
+As per the project requirements, here are the video links:
+
+1. **Project Overview Video**: [Click here to watch the walkthrough](REPLACE_WITH_YOUR_VIDEO_LINK)  
+2. **Code Explanation Video**: [Click here to watch the technical deep-dive](REPLACE_WITH_YOUR_VIDEO_LINK)
+
+*(Note: Please upload your videos to GitHub or YouTube and replace the links above)*
+
+---
 
 ---
 

@@ -228,6 +228,16 @@ def generate_report():
             add_image(doc, os.path.join(DEMO_ASSETS_DIR, file), width=3, caption=f"Sample {i+1}: {file.replace('.png','').replace('_',' ').capitalize()}", is_direct_path=True)
             if (i+1) % 2 == 0: doc.add_page_break()
 
+    add_heading(doc, "12. PROJECT SUBMISSION LINKS")
+    add_paragraph(doc, "The following links provide access to the live project resources, source code, and video demonstrations as per the final submission guidelines.")
+    add_paragraph(doc, "GitHub Repository:", bold=True)
+    add_paragraph(doc, "https://github.com/PrateekPulkit/NutriTrack")
+    add_paragraph(doc, "Live Deployment (Vercel):", bold=True)
+    add_paragraph(doc, "https://nutri-track-zeta-five.vercel.app")
+    add_paragraph(doc, "Project Presentation Videos:", bold=True)
+    add_paragraph(doc, "1. Project Overview Video: [REPLACE_WITH_YOUR_VIDEO_LINK]")
+    add_paragraph(doc, "2. Code Explanation Video: [REPLACE_WITH_YOUR_VIDEO_LINK]")
+
     doc.save("NutriTrack_Final_Detailed_Report_v2.docx")
     print("NutriTrack_Final_Detailed_Report_v2.docx generated successfully.")
 
