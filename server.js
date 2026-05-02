@@ -36,8 +36,7 @@ app.set('trust proxy', 1);
 
 // ── Security headers (helmet) ──────────────────────────────────────
 app.use(helmet({
-  // Allow inline scripts/styles needed by Vite's React build
-  contentSecurityPolicy: isProd ? undefined : false,
+  contentSecurityPolicy: false,
   crossOriginEmbedderPolicy: false,
 }));
 
