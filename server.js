@@ -137,9 +137,12 @@ if (isProd && shouldServeClient) {
 
 app.use(errorHandler);
 
-// ── Start ──────────────────────────────────────────────────────────
-app.listen(PORT, () => {
-  if (process.env.NODE_ENV !== 'production') {
-    console.log(`✅  Server running in development mode on port ${PORT}`);
-  }
-});
+// ── Export for Vercel ──────────────────────────────────────────────
+module.exports = app;
+
+// ── Start (Only if not in Vercel) ──────────────────────────────────
+if (process.env.NODE_ENV !== 'production' || !process.env.VERCEL) {
+  app.listen(PORT, () => {
+    console.log(`✅  Server running on port ${PORT}`);
+  });
+}
